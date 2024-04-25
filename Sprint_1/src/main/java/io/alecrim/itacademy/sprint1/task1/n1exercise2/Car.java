@@ -1,4 +1,4 @@
-package n1exercise2;
+package io.alecrim.itacademy.sprint1.task1.n1exercise2;
 
 public class Car {
     static final String brand = "Citroen";

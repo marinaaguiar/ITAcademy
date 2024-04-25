@@ -1,9 +1,4 @@
-package n1exercise1;
-
-import n1exercise1.Instrument;
-import n1exercise1.PercussionInstrument;
-import n1exercise1.StringInstrument;
-import n1exercise1.WindInstrument;
+package io.alecrim.itacademy.sprint1.task1.n1exercise1;
 
 public class Main {
     public static void main(String[] args) {

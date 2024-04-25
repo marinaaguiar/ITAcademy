@@ -80,7 +80,7 @@ public class InventoryMenu {
 
     private void searchProductByName(Scanner scanner) {
         System.out.print("Enter the product name to search: ");
-        String nameToSearch = scanner.next();
+        String nameToSearch = scanner.nextLine();
         productService.searchProductByName(nameToSearch);
     }
 }

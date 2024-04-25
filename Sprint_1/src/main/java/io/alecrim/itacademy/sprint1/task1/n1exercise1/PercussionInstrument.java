@@ -1,4 +1,4 @@
-package n1exercise1;
+package io.alecrim.itacademy.sprint1.task1.n1exercise1;
 
 public class PercussionInstrument extends Instrument {
     public PercussionInstrument() {
