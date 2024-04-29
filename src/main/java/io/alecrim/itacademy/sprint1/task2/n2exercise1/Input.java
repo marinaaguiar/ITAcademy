@@ -21,7 +21,11 @@ public class Input extends InputMismatchException {
         try {
             System.out.print(message);
             int intInfo = scanner.nextInt();
-            return intInfo;
+
+            if (StringValidatorUtils.hasAtLeastFourDigits(intInfo)) {
+                return intInfo;
+            }
+            throw new InputMismatchException("Input Invalid! Format Error: Expected an Int format - (e.g. 1994).");
         } catch (InputMismatchException e) {
             scanner.nextLine();
             throw new InputMismatchException("Input Invalid! Format Error: Expected an Int format - (e.g. 1994).");
@@ -47,6 +51,52 @@ public class Input extends InputMismatchException {
         } catch (InputMismatchException e) {
             scanner.nextLine();
             throw new InputMismatchException("Input Invalid! Format Error: Expected a Double format - (e.g. 100,000.00).");
+        }
+    }
+
+    public static char readChar(String message) throws Exception {
+        try {
+            System.out.print(message);
+            String stringInfo = scanner.next();
+            if ((stringInfo.length() == 1) && (stringInfo.equalsIgnoreCase("F") || stringInfo.equalsIgnoreCase("P"))) {
+                return stringInfo.charAt(0);
+            }
+            throw new Exception("Input Invalid! Format Error: Expected a char format - (e.g. 'P' for Part-time, 'F' for Full-time)");
+        } catch (Exception e) {
+            scanner.nextLine();
+            throw new Exception("Input Invalid! Format Error: Expected a char format - (e.g. 'P' for Part-time, 'F' for Full-time)");
+        }
+    }
+
+    public static String readString(String message) throws Exception {
+        try {
+            System.out.print(message);
+            String stringInfo = scanner.next();
+
+            if (StringValidatorUtils.containsOnlyLetters(stringInfo)) {
+                return stringInfo;
+            }
+            throw new Exception("Input Invalid! Format Error: Expected a String format - (e.g. 'Marina)'");
+        } catch (Exception e) {
+            scanner.nextLine();
+            throw new Exception("Input Invalid! Format Error: Expected a String format - (e.g. 'Marina)'");
+        }
+    }
+
+    public static boolean readIfNo(String message) throws Exception {
+        try {
+            System.out.print(message);
+            String stringInfo = scanner.next();
+
+            if (stringInfo.equalsIgnoreCase("Y")) {
+                return true;
+            } else if (stringInfo.equalsIgnoreCase("N")) {
+                return false;
+            } else {
+                throw new Exception("Input Invalid! Format Error: Expected a String format - (e.g. 'Y' or 'N').");
+            }
+        } catch (Exception e) {
+            throw new Exception("Input Invalid! Format Error: Expected a String format - (e.g. 'Y' or 'N').");
         }
     }
 }

@@ -3,16 +3,23 @@ import java.util.InputMismatchException;
 
 public class UserInfo {
     Input input = new Input();
+
     byte age;
     int yearOfBirth;
     float gpa;
     double expectedSalary;
+    char preferredPosition;
+    String userName;
+    boolean previousExperience;
 
     public void run() {
         getUserAge();
         getUserYearOfBirth();
         getUserGPA();
         getUserExpectedSalary();
+        getUserPreferredPosition();
+        getUserName();
+        getUserPreviousExperience();
 
         printAllUserInfo();
     }
@@ -53,10 +60,41 @@ public class UserInfo {
         }
     }
 
+    public void getUserPreferredPosition() {
+        try {
+            preferredPosition = Input.readChar("Please enter your preferred position (P) part-time or (F) full-time: ");
+            preferredPosition = Character.toUpperCase(preferredPosition);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            getUserPreferredPosition();
+        }
+    }
+
+    public void getUserName() {
+        try {
+            userName = Input.readString("Please enter your name: ");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            getUserName();
+        }
+    }
+
+    public void getUserPreviousExperience() {
+        try {
+            previousExperience = Input.readIfNo("Do you have previous experience in this role? Please enter (Y) yes or (N) no: ");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            getUserPreviousExperience();
+        }
+    }
+
     public void printAllUserInfo() {
         System.out.println("Age: " + age);
         System.out.println("Year of Birth: " + yearOfBirth);
         System.out.println("GPA: " + gpa);
         System.out.println("Expected salary: " + expectedSalary);
+        System.out.println("Employee Preferred Position: " + preferredPosition);
+        System.out.println("Name: " + userName);
+        System.out.println("Previous experience in position: " + previousExperience);
     }
 }
