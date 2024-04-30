@@ -2,7 +2,7 @@ package io.alecrim.itacademy.sprint1.task2.n2exercise1;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Input extends InputMismatchException {
+public class Input {
 
     static Scanner scanner = new Scanner(System.in);
 
