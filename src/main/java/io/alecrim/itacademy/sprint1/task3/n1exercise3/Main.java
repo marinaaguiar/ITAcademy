@@ -28,7 +28,6 @@ public class Main {
             String value = dataMap.get(key);
             String modifiedValue = value.replace("_", " ");
             String modifiedKey = key.replace("_", " ");
-            System.out.println("Key: " + modifiedKey + ", Value: " + value);
             newDataMap.put(modifiedKey, modifiedValue);
         }
         dataMap = newDataMap;
