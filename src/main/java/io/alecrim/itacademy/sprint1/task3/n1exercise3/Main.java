@@ -86,6 +86,7 @@ public class Main {
 
                 if (!Input.isStringValid(userInput)) {
                     System.out.println("Invalid Format.");
+                    numberOfQuestionsMade += 1;
                     askUserQuestion();
                     return;
                 }
