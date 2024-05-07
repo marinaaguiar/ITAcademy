@@ -3,7 +3,6 @@ import io.alecrim.itacademy.sprint1.task2.n2exercise1.StringValidatorUtils;
 import java.util.Scanner;
 
 public class Input {
-
     static Scanner scanner = new Scanner(System.in);
 
     public static String readString(String message) {
