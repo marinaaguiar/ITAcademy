@@ -15,7 +15,7 @@ public class Months {
         try {
             monthInNumber -= 1;
             monthsList.add(monthInNumber, month);
-            System.out.println("Added " + month.name + " as month " + (monthInNumber + 1) + ", at index: " + monthInNumber);
+            System.out.println("Added " + month.getName() + " as month " + (monthInNumber + 1) + ", at index: " + monthInNumber);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Error: Index is out of bounds. Cannot add month at position " + (monthInNumber + 1));
             System.out.println(e.getMessage());
@@ -29,14 +29,14 @@ public class Months {
     public static void printArrayList() {
         System.out.println("\nMonths Array List:");
         for (Month month : monthsList) {
-            System.out.println(month.name);
+            System.out.println(month.getName());
         }
     }
 
     public static void printSetList() {
         System.out.println("\nMonths Set List:");
         for (Month month : monthsListSet) {
-            System.out.println(month.name);
+            System.out.println(month.getName());
         }
     }
 }
