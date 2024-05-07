@@ -29,13 +29,12 @@ public class Game {
     }
 
     private Map<String, String> getDataHashMapFromTextFile() {
-
-        final String filePath = "/Users/marina/Developer/ITAcademy/src/main/java/io/alecrim/itacademy/sprint1/task3/n1exercise3/countries.txt";
         Map<String, String> map = new HashMap<String, String>();
+        final FileReader fileReader;
 
-        File file = new File(filePath);
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        try {
+            fileReader = new FileReader("src/main/java/io/alecrim/itacademy/sprint1/task3/n1exercise3/countries.txt");
+            BufferedReader reader = new BufferedReader(fileReader);
             String line;
 
             while ((line = reader.readLine()) != null) {
