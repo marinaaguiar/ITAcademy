@@ -46,8 +46,10 @@ public class Game {
                     map.put(key, value);
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error to read File");
         }
         return map;
     }
