@@ -8,8 +8,8 @@ class CalculateDNITest {
 
     @Test
     void checkIfDNIIsValid() {
-        int[] testCases = { 12345678, 29083192, 10923191, 98347982, 21908330};
-        char[] expectedLetters = {'Z', 'Z', 'P', 'M', 'W'};
+        int[] testCases = { 12345678, 29083192, 10923191, 98347982, 21908330, 19203810, 97565782, 10392109, 98475947, 73847398 };
+        char[] expectedLetters = {'Z', 'Z', 'P', 'M', 'W', 'Y', 'N', 'L', 'K', 'X'};
         var calculateDNI = new CalculateDNI();
 
         for (int i = 0; i < testCases.length; i++) {
