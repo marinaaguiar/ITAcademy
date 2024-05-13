@@ -3,15 +3,17 @@ package io.alecrim.itacademy.sprint1.task3.n1exercise3;
 import java.util.*;
 
 public class Questions {
-    private Input input = new Input();
-    static String userName;
-    static int usersScore;
-    static Set<Integer> uniqueNumbers = new HashSet<>();
-    static int numberOfQuestionsMade = 0;
-    static Map<String, String> dataMap;
+    private Input input;
+    private static Set<Integer> uniqueNumbers;
+    private static String userName;
+    private static int usersScore;
+    private static int numberOfQuestionsMade;
+    private static Map<String, String> dataMap;
 
     public Questions(Map<String, String> data) {
         this.dataMap = data;
+        this.input = new Input();
+        this.uniqueNumbers = new HashSet<>();
         getUserName();
         askUserQuestion();
     }
@@ -33,7 +35,6 @@ public class Questions {
     private void askUserQuestion() {
         if (dataMap == null || dataMap.isEmpty()) {
             System.out.println("No data available.");
-            return;
         }
 
         try {
@@ -46,7 +47,6 @@ public class Questions {
                     System.out.println("Invalid Format.");
                     numberOfQuestionsMade += 1;
                     askUserQuestion();
-                    return;
                 }
                 usersAnswer = userInput;
                 if (isUserAnswerCorrect(countryName, usersAnswer)) {
