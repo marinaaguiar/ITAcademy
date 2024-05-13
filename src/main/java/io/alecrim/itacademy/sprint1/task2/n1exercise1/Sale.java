@@ -3,7 +3,7 @@ package io.alecrim.itacademy.sprint1.task2.n1exercise1;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Sale extends SaleEmptyException {
+public class Sale {
     public List<Product> products;
     public double totalSalePrice;
 

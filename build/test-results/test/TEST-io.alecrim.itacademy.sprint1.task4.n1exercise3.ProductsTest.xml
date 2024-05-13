@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.alecrim.itacademy.sprint1.task4.n1exercise3.ProductsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-05-13T11:38:19" hostname="air.alecrim.dev" time="0.025">
+  <properties/>
+  <testcase name="[1] -1" classname="io.alecrim.itacademy.sprint1.task4.n1exercise3.ProductsTest" time="0.019"/>
+  <testcase name="[2] 4" classname="io.alecrim.itacademy.sprint1.task4.n1exercise3.ProductsTest" time="0.001"/>
+  <testcase name="[3] 6" classname="io.alecrim.itacademy.sprint1.task4.n1exercise3.ProductsTest" time="0.001"/>
+  <system-out><![CDATA[Expected exception message to contain: Index out of bounds: Index -1 out of bounds for length 4, but got: Index out of bounds: Index -1 out of bounds for length 4
+Expected exception message to contain: Index out of bounds: Index 4 out of bounds for length 4, but got: Index out of bounds: Index 4 out of bounds for length 4
+Expected exception message to contain: Index out of bounds: Index 6 out of bounds for length 4, but got: Index out of bounds: Index 6 out of bounds for length 4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,5 +1,3 @@
-)Expected letter: Z; Calculated letter: Z
-)Expected letter: Z; Calculated letter: Z
-)Expected letter: P; Calculated letter: P
-)Expected letter: M; Calculated letter: M
-)Expected letter: W; Calculated letter: W
+£Expected exception message to contain: Index out of bounds: Index -1 out of bounds for length 4, but got: Index out of bounds: Index -1 out of bounds for length 4
+¡Expected exception message to contain: Index out of bounds: Index 4 out of bounds for length 4, but got: Index out of bounds: Index 4 out of bounds for length 4
+¡Expected exception message to contain: Index out of bounds: Index 6 out of bounds for length 4, but got: Index out of bounds: Index 6 out of bounds for length 4
