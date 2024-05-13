@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Game {
-    static Map<String, String> dataMap;
+    private static Map<String, String> dataMap;
 
     public void startGame() {
         storeData();
