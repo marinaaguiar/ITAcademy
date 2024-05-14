@@ -1,10 +1,4 @@
 package io.alecrim.itacademy.sprint1.task5.n1exercise1;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.io.File;
 import java.util.Arrays;
 
