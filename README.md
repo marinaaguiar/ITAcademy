@@ -102,15 +102,26 @@ Level 1 - Exercise 3
 Create a class with a method that throws an ArrayIndexOutOfBoundsException.
 Verify its correct operation with a jUnit test.
 
+## Task 5
+
+[Level 1 - Exercise 1](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task5/n1exercise1)
+
+Create a class that alphabetically lists the contents of a directory received by parameter.
 
 
+[Level 1 - Exercise 2](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task5/n1exercise2)
 
+Add to the class from the previous exercise, the functionality to list a directory tree with the contents of all its levels (recursively) so that they are printed to the screen in alphabetical order within each level, also indicating whether it is a directory (D) or a file (F), and its last modified date.
 
+[Level 1 - Exercise 3](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task5/n1exercise3)
 
+Modify the previous exercise. Now, instead of displaying the result on the screen, it saves the result in a TXT file.
 
+[Level 1 - Exercise 4](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task5/n1exercise4)
 
+Adds the functionality to read any TXT file and display its contents by console.
 
+[Level 1 - Exercise 5](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task5/n1exercise5)
 
-
-
+Now the program needs to serialize a Java Object to a .ser file and then deserialize it.
 
