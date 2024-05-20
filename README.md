@@ -125,3 +125,80 @@ Adds the functionality to read any TXT file and display its contents by console.
 
 Now the program needs to serialize a Java Object to a .ser file and then deserialize it.
 
+## Task 6
+
+[Level 1 - Exercise 1](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task6/n1exercise1)
+
+Create a class called NoGenericMethods that stores three objects of the same type, along with the methods to store and retrieve those objects, and a constructor to initialize all three. Check that arguments can be placed anywhere in the constructor call.
+
+[Level 1 - Exercise 2](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task6/n1exercise2)
+
+Create a class called Person with the attributes firstname, lastname, and age. It then creates a class called GenericMethods with a generic method that accepts three generic type arguments. This method should only print to the screen the arguments it received. In the main() of the main class, call the generic method with different types of parameters.
+
+Example : an object of the Person class, a String and a primitive type.
+
+In this way you have verified that any type of parameter can be passed to it and in any order.
+
+[Level 2 - Exercise 1](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task6/n2exercise1)
+
+Modify the previous exercise so that one of the arguments to the generic method is not generic.
+
+[Level 2 - Exercise 2](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task6/n2exercise2)
+
+Modify the previous section so that the arguments to the generic method are an undefined variable argument list.
+
+## Task 7
+
+[Level 1 - Exercise 1](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task7/n1exercise1)
+
+Create an object hierarchy with three classes: Worker, Online Worker, and Onsite Worker.
+
+The Worker class has the attributes first name, last name, price/hour, and the calculateSou() method which receives as a parameter the number of hours worked and multiplies it by the price/hour. Child classes must override it, using @Override. 
+
+From the main() of the Main class, make the necessary invocations to demonstrate the operation of the @Override annotation.
+
+For face-to-face workers, the method to calculate their salary will receive as a parameter the number of hours worked per month. When calculating the salary, the number of hours worked will be multiplied by the price/hour, plus the value of a static attribute called petrol that we will add in this class.
+
+For online workers, the method to calculate their salary will receive to parameter the number of hours worked per month. When calculating the salary, the number of hours worked will be multiplied by the price/hour and the price of the flat Internet rate will be added, which will be a constant of the Online Worker class.
+
+[Level 1 - Exercise 2](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task7/n1exercise2)
+
+Add to the child classes some obsolete (deprecated) methods, and use the corresponding annotation. It invokes the obsolete methods from an external class, suppressing through the corresponding annotation the "warnings" for being obsolete.
+
+## Task 8
+
+[Level 1 - Exercise 1](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise1)
+
+Given a list of Strings, write a method that returns a list of all strings that contain the letter 'o'. Print the result.
+
+[Level 1 - Exercise 2](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise2)
+
+You have to do the same as in the previous point, but now, the method must return a list with the Strings that, in addition to containing the letter 'o', also have more than 5 letters. Print the result.
+
+[Level 1 - Exercise 3](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise3)
+
+Create a list with the names of the months of the year. Print all elements of the list with a lambda.
+
+[Level 1 - Exercise 4](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise4)
+
+Make the same impression as the previous point, but through method reference. 
+
+[Level 1 - Exercise 5](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise5)
+
+Create a Functional Interface with a method called getPiValue() that must return a double. From the main() of the main class, instantiate the interface and assign it the value 3.1415. Call the getPiValue() method and print the result.
+
+[Level 1 - Exercise 6](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise6)
+
+Create a list with numbers and text strings and sort the list with the strings from shortest to longest.
+
+[Level 1 - Exercise 7](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise7)
+
+Using the list from the previous exercise, now reverse order it from longest chain to shortest.
+
+[Level 1 - Exercise 8](https://github.com/marinaaguiar/ITAcademy/tree/main/src/main/java/io/alecrim/itacademy/sprint1/task8/n1exercise8)
+
+Create a Functional Interface that contains a method called reverse(). This method must receive and must return a String. In the main() of the main class, it injects into the interface created using a lambda, the body of the method, so that it returns the same string that it receives as a parameter but in reverse. It invokes the interface instance by passing it a string and checks if the result is correct.
+
+
+
+
