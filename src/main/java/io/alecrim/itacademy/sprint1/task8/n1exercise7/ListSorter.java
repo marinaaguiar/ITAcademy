@@ -1,4 +1,4 @@
-package io.alecrim.itacademy.sprint1.task8.n1exercise6;
+package io.alecrim.itacademy.sprint1.task8.n1exercise7;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,7 +11,7 @@ public class ListSorter {
         List<String> sortedStrings = mixedList.stream()
                 .filter(object -> object instanceof String)
                 .map(object -> (String) object)
-                .sorted(Comparator.comparingInt(String::length))
+                .sorted(Comparator.comparingInt(String::length).reversed())
                 .collect(Collectors.toList());
         System.out.println("Sorted strings by length: " + sortedStrings);
     }
