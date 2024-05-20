@@ -70,6 +70,19 @@ public class Questions {
     }
 
     private String generateRandomCountry() {
+        Iterator<String> iterator = dataMap.iterator();
+        while (iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.println(value);
+        }
+
+        // Using enhanced for loop
+        for (String value : set) {
+            System.out.println(value);
+        }
+
+
+
         List<String> keys = new ArrayList<>(dataMap.keySet());
         Random random = new Random();
         int randomIndex = random.nextInt(keys.size());
