@@ -1,4 +1,4 @@
-package io.alecrim.itacademy.sprint1.task8.n2exercise2;
+package io.alecrim.itacademy.sprint1.task8.n1exercise2;
 import java.util.Arrays;
 import java.util.List;
 
