@@ -1,5 +1,6 @@
 package io.alecrim.itacademy.sprint1.task5.n1exercise2;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.text.SimpleDateFormat;
 
@@ -7,11 +8,11 @@ public class DirectoryLister {
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    public void listDirectoryContents(String directoryPath) {
+    public void listDirectoryContents(String directoryPath) throws FileNotFoundException  {
         File directory = new File(directoryPath);
         if (!directory.exists() || !directory.isDirectory()) {
             System.out.println("Invalid directory: " + directoryPath);
-            return;
+            throw new FileNotFoundException("The provided path is not a directory.");
         }
         listDirectory(directory, 0);
     }
