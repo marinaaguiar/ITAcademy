@@ -28,7 +28,7 @@ public class SerializableObject implements Serializable {
             return object;
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error occurred during deserialization: " + e.getMessage());
-            return null;
         }
+        return null;
     }
 }
