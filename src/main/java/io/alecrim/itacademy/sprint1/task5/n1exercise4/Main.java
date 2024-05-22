@@ -1,14 +1,19 @@
 package io.alecrim.itacademy.sprint1.task5.n1exercise4;
 
+import io.alecrim.itacademy.sprint1.task5.n1exercise1.DirectoryList;
+
+import java.io.FileNotFoundException;
+
 public class Main {
     public static void main(String[] args) {
-        if (args.length == 0) {
-            System.out.println("Please provide the path to the TXT file.");
-            return;
-        }
-
-        String filePath = args[0];
         FileTextReader fileReader = new FileTextReader();
-        fileReader.getTextFileContents(filePath);
+
+        try {
+            fileReader.checkIfFileIsValid(args);
+            String filePath = args[0];
+            fileReader.getTextFileContents(filePath);
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
